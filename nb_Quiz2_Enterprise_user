@@ -1,0 +1,154 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sql\r\nselect origin, count(*) as record_count\r\nfrom default_qubole_airline_origin_destination\r\ngroup by origin\r\norder by record_count desc\r\nlimit 10",
+      "user": "cvacalebre@qubole.com",
+      "dateUpdated": "Nov 28, 2017 9:17:41 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "multiBarChart",
+          "height": 300.0,
+          "optionOpen": true,
+          "keys": [
+            {
+              "name": "origin",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "record_count",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "origin",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "record_count",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1511903646877_-602662665",
+      "id": "20171128-211406_1910134184_q_2Q2KZ82G931511903563",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "origin\trecord_count\n\"ATL\"\t2231378\n\"ORD\"\t1819864\n\"DFW\"\t1510620\n\"DEN\"\t1345147\n\"CLT\"\t1216827\n\"PHX\"\t1041055\n\"LAX\"\t963263\n\"MSP\"\t933258\n\"IAH\"\t896380\n\"DTW\"\t851254\n"
+      },
+      "dateCreated": "Nov 28, 2017 9:14:06 PM",
+      "dateStarted": "Nov 28, 2017 9:14:30 PM",
+      "dateFinished": "Nov 28, 2017 9:15:07 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\r\nselect originstatename, origin, count(distinct dest) as dest_count\r\nfrom default_qubole_airline_origin_destination\r\ngroup by originstatename, origin\r\norder by dest_count desc\r\nlimit 10",
+      "user": "cvacalebre@qubole.com",
+      "dateUpdated": "Nov 28, 2017 9:20:07 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "multiBarChart",
+          "height": 300.0,
+          "optionOpen": true,
+          "keys": [
+            {
+              "name": "originstatename",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "dest_count",
+              "index": 2.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [
+            {
+              "name": "origin",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          ],
+          "scatter": {
+            "xAxis": {
+              "name": "originstatename",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "origin",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1511903670945_1899991012",
+      "id": "20171128-211430_832024395_q_2Q2KZ82G931511903563",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "originstatename\torigin\tdest_count\n\"Georgia\"\t\"ATL\"\t213\n\"Nevada\"\t\"LAS\"\t207\n\"Colorado\"\t\"DEN\"\t204\n\"Illinois\"\t\"ORD\"\t197\n\"Minnesota\"\t\"MSP\"\t195\n\"Texas\"\t\"DFW\"\t191\n\"Missouri\"\t\"MCI\"\t187\n\"Michigan\"\t\"DTW\"\t184\n\"District of Columbia\"\t\"DCA\"\t178\n\"Arizona\"\t\"PHX\"\t175\n"
+      },
+      "dateCreated": "Nov 28, 2017 9:14:30 PM",
+      "dateStarted": "Nov 28, 2017 9:18:50 PM",
+      "dateFinished": "Nov 28, 2017 9:19:26 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1511903930297_-2043717507",
+      "id": "20171128-211850_366038203_q_2Q2KZ82G931511903563",
+      "dateCreated": "Nov 28, 2017 9:18:50 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "nb_quiz2_qubole_enterprise_user",
+  "id": "2Q2KZ82G931511903563",
+  "angularObjects": {
+    "2C13YP48M240991479319584051:shared_process": [],
+    "2C1AY258N240991479319584055:shared_process": [],
+    "2CUBJ2XUS240991504642141703:shared_process": [],
+    "2C1ZQJZJR240991479319584047:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "looknfeel": "report",
+    "cronExecutingUser": "36476",
+    "cron_updated_by_useremail": "cvacalebre@qubole.com"
+  },
+  "info": {},
+  "source": "FCN"
+}
