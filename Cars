@@ -1,0 +1,68 @@
+{
+  "paragraphs": [
+    {
+      "text": "Select * from default.usa_cars limit 10",
+      "user": "cvacalebre@qubole.com",
+      "dateUpdated": "May 18, 2020 6:42:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1588703350810_817588801",
+      "id": "20200505-182910_70020318_q_ZWB6Q183U21588703259",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "id\tprice\tbrand\tmodel\tyear\ttitle_status\tmileage\tcolor\tvin\tlot\tstate\tcountry\tcondition\n0\t6300\ttoyota\tcruiser\t2008\tclean vehicle\t274117\tblack\t  jtezu11f88k007763\t159348797\tnew jersey\t usa\t10 days left\t\n1\t2899\tford\tse\t2011\tclean vehicle\t190552\tsilver\t  2fmdk3gc4bbb02217\t166951262\ttennessee\t usa\t6 days left\t\n2\t5350\tdodge\tmpv\t2018\tclean vehicle\t39590\tsilver\t  3c4pdcgg5jt346413\t167655728\tgeorgia\t usa\t2 days left\t\n3\t25000\tford\tdoor\t2014\tclean vehicle\t64146\tblue\t  1ftfw1et4efc23745\t167753855\tvirginia\t usa\t22 hours left\t\n4\t27700\tchevrolet\t1500\t2018\tclean vehicle\t6654\tred\t  3gcpcrec2jg473991\t167763266\tflorida\t usa\t22 hours left\t\n5\t5700\tdodge\tmpv\t2018\tclean vehicle\t45561\twhite\t  2c4rdgeg9jr237989\t167655771\ttexas\t usa\t2 days left\t\n6\t7300\tchevrolet\tpk\t2010\tclean vehicle\t149050\tblack\t  1gcsksea1az121133\t167753872\tgeorgia\t usa\t22 hours left\t\n7\t13350\tgmc\tdoor\t2017\tclean vehicle\t23525\tgray\t  1gks2gkc3hr326762\t167692494\tcalifornia\t usa\t20 hours left\t\n8\t14600\tchevrolet\tmalibu\t2018\tclean vehicle\t9371\tsilver\t  1g1zd5st5jf191860\t167763267\tflorida\t usa\t22 hours left\t\n9\t5250\tford\tmpv\t2017\tclean vehicle\t63418\tblack\t  2fmpk3j92hbc12542\t167656121\ttexas\t usa\t2 days left\t\n"
+      },
+      "dateCreated": "May 5, 2020 6:27:39 PM",
+      "dateSubmitted": "May 18, 2020 6:42:14 PM",
+      "dateStarted": "May 18, 2020 6:42:22 PM",
+      "dateFinished": "May 18, 2020 6:42:27 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1588703562370_644542097",
+      "id": "20200505-183242_1909203901_q_ZWB6Q183U21588703259",
+      "dateCreated": "May 5, 2020 6:32:42 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 1000
+    }
+  ],
+  "name": "Cars",
+  "id": "ZWB6Q183U21588703259",
+  "angularObjects": {
+    "2F9TQVWW618351588118853233:shared_process": [],
+    "2F8AEJCAJ18351588118853236:shared_process": [],
+    "2F9UCGXKZ18351588118853236:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "defaultLang": ""
+  },
+  "info": {},
+  "source": "FCN"
+}
